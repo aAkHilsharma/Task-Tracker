@@ -6,26 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [showAdd, setShowAdd] = useState(false);
-  const [tasks, setTasks] = useState([
-    {
-      id: "1",
-      text: "Doctr's Appointment",
-      day: "28 Feb 2023 2:30 pm",
-      reminder: "true",
-    },
-    {
-      id: "2",
-      text: "Study Java",
-      day: "27 Feb 2023 5:00 pm",
-      reminder: "true",
-    },
-    {
-      id: "3",
-      text: "Eat healthy Food",
-      day: "26 Feb 2023 8:00 pm",
-      reminder: "true",
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const addTask = (task) => {
     const id = Math.floor(Math.random()*10000+1);
