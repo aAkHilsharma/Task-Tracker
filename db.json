@@ -4,7 +4,7 @@
       "id": "1",
       "text": "Doctor's Appointment",
       "day": "28 Feb 2023 2:30 pm",
-      "reminder": "true"
+      "reminder": true
     },
     {
       "id": "2",
@@ -15,7 +15,7 @@
     {
       "text": "Walk a mile",
       "day": "Tommorow",
-      "reminder": true,
+      "reminder": false,
       "id": "JlFwdZx"
     }
   ]
