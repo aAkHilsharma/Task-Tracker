@@ -3,28 +3,35 @@ import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import { useState } from "react";
 
+
 function App() {
   const [tasks, setTasks] = useState([
     {
       id: "1",
       text: "Doctr's Appointment",
-      date: "28 Feb 2023 2:30 pm",
+      day: "28 Feb 2023 2:30 pm",
       reminder: "true",
     },
     {
       id: "2",
       text: "Study Java",
-      date: "27 Feb 2023 5:00 pm",
+      day: "27 Feb 2023 5:00 pm",
       reminder: "true",
     },
     {
       id: "3",
       text: "Eat healthy Food",
-      date: "26 Feb 2023 8:00 pm",
+      day: "26 Feb 2023 8:00 pm",
       reminder: "true",
     },
   ]);
 
+  const addTask = (task) => {
+    const id = Math.floor(Math.random()*10000+1);
+    const newTask = {id , ...task};
+    setTasks([...tasks, newTask]);
+  }
+  
   const deleteTask = (id) => {
     setTasks(
       tasks.filter((task) => {
@@ -39,7 +46,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <AddTask />
+      <AddTask onAdd ={addTask}/>
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
