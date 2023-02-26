@@ -15,7 +15,7 @@
     {
       "text": "Walk a mile",
       "day": "Tommorow",
-      "reminder": false,
+      "reminder": true,
       "id": "JlFwdZx"
     }
   ]
