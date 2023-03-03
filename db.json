@@ -17,6 +17,24 @@
       "day": "Tommorow",
       "reminder": true,
       "id": "JlFwdZx"
+    },
+    {
+      "text": "Run a mile ",
+      "day": "27 Feb 2023 7:00 am",
+      "reminder": true,
+      "id": "MxlYPrv"
+    },
+    {
+      "text": "Doctor's Appointment",
+      "day": "27 Feb 2023 4:30 pm",
+      "reminder": false,
+      "id": "pNNKzGr"
+    },
+    {
+      "text": "Study for exam",
+      "day": "3 March 2023 9:00 am",
+      "reminder": true,
+      "id": "cwheM4h"
     }
   ]
 }
